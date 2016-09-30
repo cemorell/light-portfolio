@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!-- GoogleFonts -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=David+Libre|Quicksand" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <title>Camille Morell's Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <i id="down" style="font-size: 14px;" class="animated  fadeInDownBig fa fa-angle-double-down fa-2x" aria-hidden="true">scroll down</i>
+
+    <nav id="nav">
+    <a href="#1">Projects</a>
+    <a href="#2">About Me</a>
+    <a href="#3">Blogs</a>
+    <a href="#4">Bye</a>
+  </nav>
+
+  <!-- Initialize video  -->
+<div  id="ocean" style="width: 100%; height: 100%;" data-vide-bg="light/philfriedelectricbulbmp4" data-vide-options="position: 0% 50%">
+  <h1> Hey There, I'm Camille </h1>
+  <h2>Dream. Develop.</h2>
+</div>
+
+
+
+
+  <div id="pinContainer">
+
+    <!-- Projects/Slide one -->
+    <section class="panel blue">
+      <div class="item two">
+        <h2>My Projects</h2>
+        <h3>Here are a few of the awesome apps I've been working on</h3>
+        <div id="images">
+          <div class="image">
+            <a href="https://intense-ravine-90857.herokuapp.com/" target="_blank"><img src="./img/buildtwo.png" alt="Build-A-Date" class="img-circle" style="max-height: 200px; max-width: 200px;"></a>
+            <a href="https://github.com/cemorell/webpack_express_template" target="_blank"><h4>Build-A-Date code</h4></a>
+            <p>App generates date based on theme using Spotify, Yelp and Weather APIs, React.js, FirebaseDB, Node.js and Express</p>
+          </div>
+          <div class="image">
+            <a href="http://sitter-now.herokuapp.com/" target="_blank"><img src="./img/sitter.png" alt="Build-A-Date" class="img-circle" style="max-height: 200px; max-width: 200px;"></a>
+            <a href="https://github.com/cemorell/auth0_template_webpack" target="_blank"><h4>Sitter Now code</h4></a>
+            <p>Social app connects parents with babysitters. Built with  React.js, Node.js, MongoDB, Express, Auth0 and Bootstrap.</p>
+          </div>
+          <div class="image">
+            <a href="http://datehub.herokuapp.com/" target="_blank"><img src="./img/datehub.png" alt="Build-A-Date" class="img-circle" style="max-height: 200px; max-width: 200px;"></a>
+            <a href="https://github.com/rpreilley/dev-app" target="_blank"><h4>Date Hub code</h4></a>
+            <p>This personal-profile driven app connects developers. Technologies used: Node.js, Express and MongoDB.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel turqoise">
+      <div class="item one">
+        <h2>Hi, I'm Camille</h2>
+        <img src="./img/camillepic.jpg" alt="Camille Morell" style="max-height: 250px; max-width: 250px;">
+        <p id="about">Frequently found either fervently biting my lip or fist-pumping in success while face-deep in code, I've recently moved from the financial services industry to full-stack web development. Motivated by the potential technology offers, I'm thrilled to explore new industries in hopes of solving great problems. Interested? Let's talk.</p>
+        <div class="abouticons">
+            <a href="https://github.com/cemorell" target="_blank"><i class="fa fa-github fa-fw fa-2x" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/camillemorell" target="_blank"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+            <a href="./camillemorell.pdf" target="_blank"><i class="fa-file-text-o fa-2x" aria-hidden="true"></i></a>
+          </div>
+      </div>
+    </section>
+
+    <section class="panel green">
+      <div class="item three">
+        <h2>Blogs</h2>
+        <h3>Here's what I'm thinking</h3>
+        <div id="blogs">
+          <div class="blog">
+            <a href="https://medium.com/@cemorell/i-choose-to-code-b43c85a55bcc#.kdtx8cwlt" target="_blank"><h3>Why Go To General Assembly</h3></a>
+            <p>"I did this not because it was easy, but because it was hard"</p>
+          </div>
+          <div class="blog">
+            <a href="https://medium.com/@cemorell/setting-up-that-express-app-42616fa30228#.7ypl46tip" target="_blank"><h3>Setting up that Express App</h3></a>
+            <p>"if you try to run your server using nodemon, you will throw an error"</p>
+          </div>
+          <div class="blog">
+            <a href="https://medium.com/@cemorell/there-and-back-again-a-for-loop-s-tale-12c0ec0be656#.u9vrls8tm" target="_blank"><h3>There and Back Again: A For Loop Tale</h3></a>
+            <p>"initialization, condition, final expression and statement when iterating through data"</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel bordeaux">
+      <b>Thanks For Coming!</b>
+    </section>
+
+  </div>
+
+  <!-- JQuery -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.13.1/TweenMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js"></script>
+  <!-- ONLY FOR DEV -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.js"></script>
+ -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<script>window.jQuery || document.write('<script src="../libs/jquery/dist/jquery.min.js"><\/script>')</script>
+<!-- Another Video plugin -->
+<script src="./src/jquery.vide.js"></script>
+<script src="javascripts.js"></script>
+
+
+</body>
+</html>
