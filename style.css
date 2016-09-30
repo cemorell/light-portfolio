@@ -4,8 +4,8 @@
       height: 100%;
     }
     body {
-font-family: 'Quicksand', sans-serif;
-      background-color: #c7e1ff;
+      font-family: 'Quicksand', sans-serif;
+      background-color: black;
       font-size: 13px;
       -webkit-tap-highlight-color: rgba(0,0,0,0);
       margin:0;
@@ -35,6 +35,7 @@ font-family: 'Quicksand', sans-serif;
       color: white;
       text-align: left;
       padding: 10px 50px 15px 0;
+      font-size: 14px;
     }
     #nav {
       display: inline-block;
@@ -122,36 +123,95 @@ font-family: 'Quicksand', sans-serif;
     #about{
       padding: 10px 200px;
     }
-#images{
-  padding-top: 30px;
-  display: inline-flex;
-}
-.green{
-  color: black;
-}
-.image{
-  display: inline-block;
-  position: relative;
-  padding: 0 8px;
-  width: 33%;
-}
-.three a{
-  color: #010047;
-}
-.img-circle {
-    position: relative;
-    -webkit-filter: grayscale(100%);
-}
-.img-circle:hover{
-  filter: none;
-  -webkit-filter: grayscale(0%);
-}
-.abouticons a {
-  color: white;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-a:hover {
-      color: #590100;
+    .one img {
+      max-height: 250px;
+      max-width: 250px;
     }
+  #images{
+    padding-top: 30px;
+    display: inline-flex;
+  }
+  .green{
+    color: black;
+  }
+  .image{
+    display: inline-block;
+    position: relative;
+    padding: 0 8px;
+    width: 33%;
+  }
+  .image img{
+    max-height: 200px;
+    max-width: 200px;
+  }
+  .three a{
+    color: #010047;
+  }
+  .img-circle {
+      position: relative;
+      -webkit-filter: grayscale(100%);
+  }
+  .img-circle:hover{
+    filter: none;
+    -webkit-filter: grayscale(0%);
+  }
+  .abouticons a {
+    color: white;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  a:hover {
+        color: #590100;
+      }
+
+@media only screen and (max-width: 600px) {
+    .item{
+      padding: 10px;
+    }
+    #about{
+      padding: 10px;
+    }
+    .image img{
+      max-height: 50px;
+      max-width: 50px;
+    }
+    .image{
+      display: inline;
+      padding: 0;
+    }
+    #pinContainer {
+        overflow: visible;
+    }
+    #images{
+      padding: 0;
+      display: inline;
+    }
+    .one img {
+      max-height: 150px;
+      max-width: 150px;
+    }
+    .two h3{
+      font-size: 15px;
+    }
+    .two p{
+      padding-top: 0;
+      font-size: 16px;
+    }
+    .two h1{
+      font-size: 21px;
+    }
+    .two a{
+      padding-bottom: 0;
+    }
+    .image a {
+      display: inline-flex;
+      padding-top: 0;
+      padding-bottom: 0;
+      font-size: 18px;
+    }
+    #down {
+      font-size: 8px;
+    }
+
+}
 
