@@ -25,7 +25,7 @@
       text-align: center;
       padding-bottom: 15px;
       padding-top: 10px;
-      background-color: rgba(255,0,0,0.1);
+      background-color: rgba(255,0,0,0.12);
     }
      #down {
       position: fixed;
@@ -97,7 +97,7 @@
         position: absolute;
     }
     .item{
-      padding: 30px;
+      padding: 20px;
     }
     .blue {
       background-color: #A72608;
@@ -121,11 +121,11 @@
       top: 50%;
     }
     #about{
-      padding: 10px 200px;
+      padding: 10px 100px;
     }
     .one img {
-      max-height: 250px;
-      max-width: 250px;
+      max-height: 200px;
+      max-width: 200px;
     }
   #images{
     padding-top: 30px;
@@ -211,6 +211,25 @@
     }
     #down {
       font-size: 8px;
+    }
+    nav {
+      padding-bottom: 10px;
+      background-color: rgba(255,0,0,0.95);
+    }
+    #nav a{
+      font-size: 12px;
+    }
+    nav a {
+      padding: 0 10px;
+    }
+     p{
+      font-size: 16px;
+    }
+    h2{
+      font-size: 25px;
+    }
+    h3{
+      font-size: 18px;
     }
 
 }
